@@ -5,16 +5,19 @@
 		"reverse proxy",
 		"nginx"
 	],
-	"repository": "https://github.com/cwarden/heroku-reverse-proxy",
+	"repository": "https://github.com/williamkleber2/heroku-reverse-proxy",
 	"buildpacks": [
 		{
 			"url": "http://github.com/leafo/heroku-buildpack-lua.git"
 		}
 	],
 	"env": {
-		"UPSTREAM_SERVER": {
+		"UPSTREAM_SERVER1": {
+			"description": "URL of upstream server to which all requests should be proxied"
+		},
+		"UPSTREAM_SERVER2": {
 			"description": "URL of upstream server to which all requests should be proxied"
 		}
 	},
-	"stack": "cedar-14"
+	"stack": "heroku-20"
 }
